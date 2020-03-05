@@ -1,6 +1,9 @@
 <!--DOC type html-->
 <html>
     <head>
+        <script src="jquery/jquery-3.4.1.js"></script>
+        <script src="jquerycustom.js"></script>
+        <script src="javascriptcustom.js"></script>
         <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
         <link href="styles.css" rel="stylesheet" type="text/css">
         
@@ -14,8 +17,8 @@
             <div class="container">
                 <div class="MenuBar">
                     <button class="button1"> ALL</button>
-                    <button class="button1"> FACE</button>
-                    <button class="button1"> EYES</button>
+                    <button class="button1" > FACE</button>
+                    <button class="button1" > EYES</button>
                     <button class="button1"> LIPS</button>
                     <button class="button1"> SKIN</button>
                 </div>
@@ -25,8 +28,81 @@
         <div class="container">
             <div class="Products">
                 <h3> PRODUCTS PLACEHOLDER</h3>
+
+                <div class="row">
+
+                    <div class="col-sm-3">
+                        <div class="ProductBox">
+                            <div id="ProductBox1">
+                                <h4> product 1</h4>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary shop-item-button" id="Product1Button" type="button">ADD TO CART</button>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="ProductBox">
+                            <h4> product 2</h4>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="ProductBox">
+                            <h4> product 3</h4>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="ProductBox">
+                            <h4> product 4</h4>
+                        </div>
+                    </div>
+
+                </div>
+                <BR>
+                </BR>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="ProductBox">
+                            <h4> product 5</h4>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="ProductBox">
+                            <h4> product 6</h4>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="ProductBox">
+                            <h4> product 7</h4>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="ProductBox">
+                            <h4> product 8</h4>
+                        </div>
+                    </div>
+                </div>
+                
+
+                </div>
+
             </div>
             
+        </div>
+
+        <div class="container">
+            <div class="Contact">
+                <h3>Contact Us placeholder</h3>
+                <input type="text" id="NameInput" style="width: 23em" placeholder="Name..." ></input>
+                <input type="text" id="EmailInput" style="width: 23em" placeholder="Email..."></input>
+                <BR>
+                </BR>
+                <input type="text" id="UserComments" style="width: 50em" placeholder="Comments..."></input>
+            </div>
         </div>
     </body>
 </html>
