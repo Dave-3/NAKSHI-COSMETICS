@@ -3,15 +3,33 @@ if (document.readyState == 'loading') {
 } else {
     ready()
 }
-var removeCartItemButtons=document.getElementsByClassName("btn-danger")
-console.log(removeCartItemButtons)
-for (var i=0; i < removeCartItemButtons.length; i++){
+function ready(){
+    var removeCartItemButtons=document.getElementsByClassName("btn-danger")
+     //console.log(removeCartItemButtons)
+    for (var i=0; i < removeCartItemButtons.length; i++){
     var button=removeCartItemButtons[i]
-    button.addEventListener('click',function(event){
-        var buttonClicked=event.target
-        buttonClicked.parentElement.parentElement.remove()
-        updateCartTotal()
- })
+    button.addEventListener('click',removeCartItem) 
+}
+var quantityInputs=document.getElementsByClassName('cart-quantity-input')
+for (var i=0;i<quantityInputs.length;i++){
+    var input =quantityInputs[i]
+    input.addEventListener('change',quantitychanged)
+
+}
+
+
+}
+function removeCartItem(event){
+    var buttonClicked=event.target
+    buttonClicked.parentElement.parentElement.remove()
+    updateCartTotal()
+}
+function quantitychanged(event){
+    var input=event.target
+    if(isNaN(input.value)||input.value <=0){
+        input.value=1
+    }
+    updateCartTotal()
 }
 
 function updateCartTotal(){
@@ -27,5 +45,6 @@ function updateCartTotal(){
         var quantity=quantityElement.value
         total =total+(price *quantity)
     }
+    total=Math.round(total*100)/100
     document.getElementsByClassName('cart-total-price')[0].innerText='Ksh' +total
 }
