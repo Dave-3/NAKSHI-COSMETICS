@@ -21,9 +21,20 @@ for (var i=0;i<addToCartButtons.length;i++){
     var button=addToCartButtons[i]
     button.addEventListener('click',addToCartClicked)
 }
+document.getElementsByClassName('btn-purchase')[0].addEventListener('click',purchaseClicked)
 
 
 }
+function purchaseClicked(){
+    // alert(price)
+    alert('Thank you for your purchase'+"")
+    var cartItems=document.getElementsByClassName('cart-items')[0]
+    while(cartItems.hasChildNodes()){
+        cartItems.removeChild(cartItems.firstChild)
+    }
+    updateCartTotal()
+}
+
 function removeCartItem(event){
     var buttonClicked=event.target
     buttonClicked.parentElement.parentElement.remove()
@@ -38,10 +49,11 @@ function quantitychanged(event){
 }
 function addToCartClicked(event){
     var button = event.target
-    var shopItem=button.parentElement.parentElement
+    var shopItem=button.parentElement
     var title=shopItem.getElementsByClassName('menuTitle')[0].innerText
     alert(title)
     var price=shopItem.getElementsByClassName('defaultPrize')[0].innerText
+    alert(price+"valueeee")
     var imageSrc=shopItem.getElementsByClassName('fooima')[0].src
     console.log(price,title,imageSrc)
     addItemToCart (title,price,imageSrc)
@@ -50,7 +62,6 @@ function addToCartClicked(event){
 function addItemToCart(title,price,imageSrc){
     var cartRow=document.createElement('div')
     cartRow.classList.add('cart-row')
-    cartRow.innerText=title
     var cartItems=document.getElementsByClassName('cart-items')[0]
     var cartItemNames=cartItems.getElementsByClassName('cart-item-title')
     for(var i=0;i<cartItemNames.length;i++){
@@ -71,10 +82,10 @@ function addItemToCart(title,price,imageSrc){
                     <input class="cart-quantity-input" type="number" value="1">
                     <button class="btn btn-danger" type="button">REMOVE</button>
                 </div>`
-                cartRow.innerHTML=cartRowContents
+    cartRow.innerHTML=cartRowContents
     cartItems.append(cartRow)
-    cartRow.getElementsByClassName('btn-danger'[0).addEventListener('click',removeCartItem)
-    cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change',quantitychanged)
+    cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click',removeCartItem)
+    cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change',quantitychanged  )
 }
 
 function updateCartTotal(){
@@ -86,7 +97,7 @@ function updateCartTotal(){
         var priceElement=cartRow.getElementsByClassName('cart-price')[0]
         var quantityElement=cartRow.getElementsByClassName('cart-quantity-input')[0]
         var price=parseFloat(priceElement.innerText.replace('Ksh',''))
-        alert(price)
+        alert(price+"updating")
         var quantity=quantityElement.value
         total =total+(price *quantity)
     }
