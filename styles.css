@@ -11,9 +11,16 @@
     width:13em;
 }
 
+.button1Active{
+    background-color:white;
+    border:solid red 1px;
+    color:red;
+    
+}
+
 .Products{
     border:solid grey 1px;
-    height: 700px;
+    height: 1000px;
 }
 
 .ProductBox{
@@ -32,4 +39,17 @@
 
 #ProductBox1{
     display: none;
+}
+
+#face1{
+    display:none;
+}
+
+#eyes1{
+    display:none;
+}
+
+#Copyright{
+    text-align:center;
+    font-size:12px;
 }
