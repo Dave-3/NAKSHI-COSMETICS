@@ -100,7 +100,15 @@ slide p{
   background-color: rgb(6, 44, 49);
   color: white;
 }
-
+#logo{
+  height: 300px;
+  margin-left: 600px;
+  
+}
+h1{
+  color: rgb(153, 5, 5);
+  text-align: center;
+}
 
 
 
