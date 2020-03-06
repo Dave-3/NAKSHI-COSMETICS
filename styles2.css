@@ -4,6 +4,10 @@ html,body {
   padding: 0;
   margin: 0px;
 }
+defaultPrize{
+  font-weight:800;
+  text-align:center;
+}
 
 slider{
   display: block;
