@@ -25,7 +25,8 @@
   }
   /* products styles */
   .fooima{
-    height: 100px;
+    height: 150px;
+    width: 300px;
 
 
   }
@@ -138,4 +139,3 @@
     margin: 40px auto 80px auto;
     font-size: 1.75em;
 }
-
