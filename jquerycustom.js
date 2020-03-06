@@ -59,7 +59,7 @@ $('#checkout1').click(function showFace(){
 })
       
 
-}
+})
 
 /*
 jQuery(document).ready(function(){
