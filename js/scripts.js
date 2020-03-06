@@ -127,7 +127,8 @@ function updateCartTotal(){
 //     total = Math.round(total * 100) / 100
 //     document.getElementsByClassName("cart-total-price")[0].innerText = 'Ksh' + total
 
-/*=======
+//=======
+/*
 if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', ready)
 } else {
@@ -255,6 +256,6 @@ function updateCartTotal(){
 //     }
 //     total = Math.round(total * 100) / 100
 //     document.getElementsByClassName("cart-total-price")[0].innerText = 'Ksh' + total
+*/
 
->>>>>>> 36661e4a34854459d10df5709eed3b44f6a82b95
 // }
