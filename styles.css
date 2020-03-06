@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .LOGO{
     color:red;
     text-align: center;
@@ -68,4 +69,76 @@
 
 #BuyerResidence{
     display:none;
+=======
+.LOGO{
+    color:red;
+    text-align: center;
+    width: fill;
+    height: 120px;
+}
+
+.button1{
+    background-color: red;
+    color:white;
+    width:13em;
+}
+
+.button1Active{
+    background-color:white;
+    border:solid red 1px;
+    color:red;
+    
+}
+
+.Products{
+    border:solid grey 1px;
+    height: 1000px;
+}
+
+.ProductBox{
+    border:solid grey 1px;
+    width:200px;
+    height:200px;
+}
+
+#Product1Button{
+    width:10em;
+    font-size: 10;
+    position:relative;
+    top: 1em;
+    left: 5em;
+}
+
+#ProductBox1{
+    display: none;
+}
+
+#face1{
+    display:none;
+}
+
+#eyes1{
+    display:none;
+}
+
+#checkout{
+    display:none;
+}
+
+#Copyright{
+    text-align:center;
+    font-size:12px;
+}
+
+#BuyerName{
+    display:none;
+}
+
+#BuyerEmail{
+    display:none;
+}
+
+#BuyerResidence{
+    display:none;
+>>>>>>> 36661e4a34854459d10df5709eed3b44f6a82b95
 }
