@@ -49,7 +49,23 @@
     display:none;
 }
 
+#checkout{
+    display:none;
+}
+
 #Copyright{
     text-align:center;
     font-size:12px;
+}
+
+#BuyerName{
+    display:none;
+}
+
+#BuyerEmail{
+    display:none;
+}
+
+#BuyerResidence{
+    display:none;
 }

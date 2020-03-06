@@ -1,5 +1,13 @@
 jQuery(document).ready(function(){
 
+    $('#allButton').click(function(){
+        console.log("detected")
+        $(".Products").hide();
+        $("#face1,#eyes1,#lips1,#skin1").show();
+        $('h2').hide();
+    })
+
+
     $('#faceButton').click(function(){
 
         $('.Products').hide();
@@ -7,6 +15,7 @@ jQuery(document).ready(function(){
         $('#lips1').hide();
         $('#skin1').hide();
 
+        $('h2').show();
         $('#face1').show();
     })
 
@@ -43,7 +52,11 @@ jQuery(document).ready(function(){
 
     })
 
-    
+$('#checkout1').click(function showFace(){
+    $("#face1,#eyes1,#lips1,#skin1,#checkout1,#ContactUs").hide();
+    $("#checkout,#BuyerName,#BuyerEmail,#BuyerResidence").show();
+})
+      
 
 
 

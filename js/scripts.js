@@ -51,9 +51,9 @@ function addToCartClicked(event){
     var button = event.target
     var shopItem=button.parentElement
     var title=shopItem.getElementsByClassName('menuTitle')[0].innerText
-    alert(title)
+    // alert(title)
     var price=shopItem.getElementsByClassName('defaultPrize')[0].innerText
-    alert(price+"valueeee")
+    // alert(price+"valueeee")
     var imageSrc=shopItem.getElementsByClassName('fooima')[0].src
     console.log(price,title,imageSrc)
     addItemToCart (title,price,imageSrc)
@@ -97,7 +97,7 @@ function updateCartTotal(){
         var priceElement=cartRow.getElementsByClassName('cart-price')[0]
         var quantityElement=cartRow.getElementsByClassName('cart-quantity-input')[0]
         var price=parseFloat(priceElement.innerText.replace('Ksh',''))
-        alert(price+"updating")
+        // alert(price+"updating")
         var quantity=quantityElement.value
         total =total+(price *quantity)
     }
