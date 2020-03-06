@@ -61,7 +61,7 @@ $('#checkout1').click(function showFace(){
 
 
 
-=======
+/*
 jQuery(document).ready(function(){
 
     $('#allButton').click(function(){
@@ -126,3 +126,4 @@ $('#checkout1').click(function showFace(){
 
 
 })
+*/
